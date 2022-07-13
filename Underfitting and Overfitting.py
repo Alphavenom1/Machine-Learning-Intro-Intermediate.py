@@ -44,3 +44,5 @@ for max_leaf_nodes in candidate_max_leaf_nodes:
 best_tree_size = 100
 
 #Fit Model Using All Data
+final_model = DecisionTreeRegressor(max_leaf_nodes=100,random_state=1)
+final_model.fit(X,y)
